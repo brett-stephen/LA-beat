@@ -63,14 +63,11 @@ h2{
     padding: 20px 40px 20px 40px;
     max-width: 1600px;
 	display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     grid-template-areas:    " a a a ."
-                            " b b b d"
-                            " c c c d"
-                            " e e e d"
-                            " f f f ."
+                            " b b b ."
+
 }
 
 .header_wrapper{
@@ -150,6 +147,21 @@ li{
     margin-left: 2em;
 }
 
+.cont_reading{
+    background-color: red;
+    padding: 0.5em;
+    display: inline-block;
+    color: white;
+}
+
+.social_media{
+    padding: 10px;
+}
+
+.social_media svg{
+    margin-right: 10px;
+    fill: #ffd800;
+}
 nav ul li.logo {
     font-size: 32px;
     font-style: italic;
@@ -161,13 +173,79 @@ nav ul li.logo {
     border-bottom: 2px solid  #ffd800;
 }
 
+.left_image
+{
+    margin: 1em;
+    display: inline-block;
+    float: left;
+    max-width: 295px;
+}
+
+.right_image
+{
+    margin: 1em;
+    display: inline-block;
+    float: right;
+    max-width: 295px;
+}
+
+.right_image img, .left_image img{
+    width: 100%;
+}
+
+.right_image p, .left_image p{
+    margin: 0;
+    padding: 0.5em;
+    color: white;
+    font-style: italic;
+    background-color: grey
+}
+
+.bottem_element{
+    border-top: 2px solid  grey;
+    
+}
+
+footer{
+    background: black;
+    height: 100px
+}
+
+footer nav{
+    text-align: center; 
+    margin: auto;
+}
+
+footer nav ul li a  {
+    display: block;
+    font-size: 13px;
+    
+}
+
+footer nav ul li a:hover{
+    border-bottom: none;
+    color: red;
+}
 
 /* TYPOGRAPHY */
 
-h3 { margin: 0; text-align: center; padding: 15px; font-size: 20px; }
-p { font-size: 18px; }
+h3 { 
+    margin: 0; 
+    text-align: center; 
+    padding: 15px; 
+    font-size: 20px; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+p { font-size: 14px; }
 a { color: black ; text-decoration: none;}
 a:hover { text-decoration: underline; }
+
+
+
+
+
 
 a.submit { 
     display: block; 
