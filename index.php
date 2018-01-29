@@ -1,23 +1,17 @@
+<?php
+	$the_title = 'L.A. Beats - Music Home';
+	$this_Page = "Music_Beat";
+    $css_style = "index";?>
+
 <!doctype html>
+
 <html>
 	<head>
-        <title>Template</title>
-		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/style-index.css">
+        <?php include("includes/head.php"); ?>
 	</head>
 	<body>
-        <header>
-            <a href="http://www.labeat.ca/index.php" id="title"> <img src="imgs/header_logo.jpg"> </a>
-            <nav>
-                <ul>
-                    <li class="menu_item"><a href="index.html" class="selected">Music Beat</a></li>
-                    <li class="menu_item"><a href="http://www.labeat.ca/index.php?option=com_content&view=section&layout=blog&id=5&Itemid=58">Drama Beat</a></li>
-                    <li class="menu_item"><a href="http://www.labeat.ca/index.php?option=com_content&view=category&layout=blog&id=35&Itemid=59">Art Beat</a></li>
-                    <li class="menu_item"><a href="about_us.html">About Us</a></li>
-                </ul>
-            </nav>
-        </header>
+        
+        <?php include("includes/header.php"); ?>
         
 		<div class="wrap-main">
             <article class="grid_item item-1">
@@ -27,6 +21,14 @@
                     <div class="author">Richard Amery</div>
                 </div>
                 <div class="text_box">
+                    
+                    <div class="right_image">
+                        <img src="imgs/jojo-mason.jpg">
+                        <p>
+                        JOJO MASON PLAYS LETHBRIDGE, FEB. 3. PHOTO SUBMITTED
+                        </p>
+                    </div>
+                    
                     <p>
                     Regina born, Vancouver based “country/soul” singer Jojo Mason is all about the good vibes with a little bit of good luck and good timing.
                     </p>
@@ -34,13 +36,6 @@
                     <p>
                     Mason never even thought of being a singer. He wanted to be a professional hockey player and moved out to Victoria to play junior hockey until he injured himself. However a fortuitous meeting at a party with producer Dan Schwimmer who was struggling with a line in a song about drinking moonshine out of a Mason’s jar, until he met Mason, who was doing just that.
                     </p>
-                
-                    <div class="right_image">
-                        <img src="imgs/jojo-mason.jpg">
-                        <p>
-                        JOJO MASON PLAYS LETHBRIDGE, FEB. 3. PHOTO SUBMITTED
-                        </p>
-                    </div>
                     
                     <p>
                     They struck up a quick rapport and friendship and Schwimmer ended up taking Mason under his wing.
@@ -59,16 +54,8 @@
                         “I’ve never played with them before. This is my first tour and they’ve been so generous,” Mason continued.
                     </p>
                     
-                    <p>
-                    Mason has been pleasantly surprised  by the success of his debut CD, having carefully chosen which songs he wanted to record for it.
-                        “Dan has a lot of songs to choose from,” Mason observed, adding it was easy to choose the ones that resonated the most with him.
-                    </p>
                     
-                    <p>
-                    Now Mason has released his debut hit album “Both Sides of the Bar”  and several  hit singles including “It’s All Good,” “Good Kind of Love” and “Red Dress” and has begun a tour with country stars the James Barker band and Meghan Patrick, who stop by Average Joes, Feb. 3.
-                    </p>
-                    
-                    <a href="JoJo-article.html" class="cont_reading"> Continue Reading </a> <br>
+                    <a href="JoJo-article.php" class="cont_reading"> Continue Reading </a> <br>
                     
                     <div class="social_media">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
@@ -119,7 +106,7 @@
                     Tickets are $15 from the Slice or Blueprint or $20 at the door. It is a fundraiser for this year’s edition of FLIPfest, a  multi-venue Femme positive music festival which was a highlight of last year.
                     </p>
                     
-                    <a href="jazz_jam-article.html" class="cont_reading"> Continue Reading </a> <br>
+                    <a href="jazz_jam-article.php" class="cont_reading"> Continue Reading </a> <br>
                     
                     <div class="social_media">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
@@ -133,23 +120,7 @@
             </article>
             
             <div class="grid_item item-3">
-                <h3> Live Beat </h3>
-                <ul>
-                <li><a href="ancient-shapes-listings.html">Sun,Jan 28 | 21.00 Ancient Shapes (Daniel Romano)...</a></li>
-                <li><a>Mon,Jan 29 | 21.00 Open Mic at the Onion</a></li>
-                <li><a>Mon,Jan 29 | 21.00 Open Mic at Owl Acoustic Loung...</a></li>
-                <li><a>Tue,Jan 30 | 20.00 Open Mic</a></li>
-                <li><a>Wed,Jan 31 | 21.00 Stand up Comedy open mic</a></li>
-                <li><a href="halestorm-listings.html">Thu,Feb 1 | 19.00 Halestorm with Stone Sour and ...</a></li>
-                <li><a>Thu,Feb 1 | 21.00 Open mic at Slice</a></li>
-                <li><a>Fri,Feb 2 | 20.00 Open Mic at Honker’s Pub</a></li>
-                <li><a href="yuk-yuks-listings.html">Fri,Feb 2 | 20.30 yuk Yuks Comedy with Crackerz ...</a></li>
-                <li><a>Fri,Feb 2 | 21.00 Dave McCann</a></li>
-                <li><a>Sat,Feb 3 | 17.30 James Oldenburg and Paul Holde...</a></li>
-                <li><a>Sat,Feb 3 | 20.00 James Barker Band with Meghan ...</a></li>
-                <li><a>Sat,Feb 3 | 21.00 Randall Arsenault</a></li>
-                <li><a>Sat,Feb 3 | 21.00 Fuck Cancer benefit with DJ Ra...</a></li>    
-                </ul>
+               <?php include("includes/listings.php"); ?> 
             </div>
             
             <div class="grid_item item-4 advert">
@@ -157,16 +128,8 @@
             </div>
             
 		</div>
-        <footer>
-            <h3>L.A. Beat</h3>
-        <nav>
-                <ul>
-                    <li class="menu_item"><a href="index.html">Music Beat</a></li>
-                    <li class="menu_item"><a href="http://www.labeat.ca/index.php?option=com_content&view=section&layout=blog&id=5&Itemid=58">Drama Beat</a></li>
-                    <li class="menu_item"><a href="http://www.labeat.ca/index.php?option=com_content&view=category&layout=blog&id=35&Itemid=59">Art Beat</a></li>
-                    <li class="menu_item"><a href="about_us.html">About Us</a></li>
-                </ul>
-            </nav>
-        </footer>
+        
+	   <?php include('includes/footer.php'); ?>
+        
 	</body>
 </html>
