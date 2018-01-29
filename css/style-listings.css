@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins');
 
 * {
@@ -48,12 +47,45 @@ h2{
     
 }
 
+.item-3 {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.item-3 h3{
+    color: red;
+    font-size: 30px;
+}
 
 
+.item-3 ul{
+    list-style-type: square;
+    padding: 0;
+}
 
+.item-3 ul li{
+    display: list-item;
+    margin-bottom: 20px;
+    border-bottom: 2px solid grey;
+    
+}
 
+.information ul{
+    width: 50%;
+    list-style-type: square;
+    padding: 0;
+    display: inline-block;
+}
 
+.information ul li{
+    display: list-item;
+    margin-bottom: 20px;
+    border-bottom: 2px solid grey;
+}
 
+.information .Venue{
+    float: right;
+}
 
 
 /* GRID */
@@ -65,8 +97,9 @@ h2{
 	display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas:    " a a a ."
-                            " b b b ."
+    grid-template-areas:    " a a a c"
+                            " b b b c"
+                            " d d d d"
 
 }
 
@@ -86,17 +119,18 @@ h2{
 }
 
 .date, .author{
+    font-family: 'Playfair Display', serif;
     display: inline-block;
 }
 
-.item-1 { grid-area: a; background-color: white;}
-.item-2 { grid-area: b; background-color: skyblue;}
-.item-3 { grid-area: c; background-color: olive;}
-.item-4 { grid-area: d; background-color: bisque; color: white; }
+.item-1 { grid-area: a;}
+.item-2 { grid-area: b;}
+.item-3 { grid-area: c; background: #f2f2f2; padding: 25px;}
+.item-4 { grid-area: d; }
 .item-5 { grid-area: e; background-color: burlywood; color: white; }
 .item-6 { grid-area: f; background-color: brown; color: white;  }
 
-.item-1, .item-2, .item-3,.item-4,.item-5,.item-6
+.item-1, .item-2
 {
     padding: 10px;
 }
@@ -113,7 +147,6 @@ nav ul {
     margin: auto;
     padding: 0;
     list-style: none;
-    font-family: 
 }
 
 nav ul li a {
@@ -152,6 +185,12 @@ li{
     padding: 0.5em;
     display: inline-block;
     color: white;
+}
+
+.cont_reading:hover{
+    border-left: 7px solid #ffd800;
+    color: #ffd800;
+    text-decoration: none;
 }
 
 .social_media{
@@ -199,6 +238,7 @@ nav ul li.logo {
     color: white;
     font-style: italic;
     background-color: grey
+    
 }
 
 .bottem_element{
@@ -260,31 +300,10 @@ a.submit {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1050px) {
 .wrap-main {
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 60px;
-    grid-row-gap: 100px;
-    grid-template-areas: "a a a"
-                         "b b c"
-                         "d e e"
-                         "f f f"
-}
-
-@media screen and (max-width: 480px) {
-.wrap-main {
-    grid-template-columns: 1fr;
-    grid-column-gap: 60px;
-    grid-row-gap: 100px;
     grid-template-areas:"a"
-                        "a"
-                        "b"
                         "b"
                         "c"
                         "d"
-                        "e" 
-                        "f"
-}
-    
-}
+}}
